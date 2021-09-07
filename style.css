@@ -1,0 +1,57 @@
+html{
+    margin:0;
+    padding: 0;
+    text-align: center;
+    font-size: 62.5%;
+    height: 100%;
+}
+body{
+    box-sizing: border-box;
+    font-family: "Segoe UI", Helvetica, sans;
+   background: linear-gradient(to bottom, deepskyblue, white);
+  
+}
+
+ul#todolist {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul#todolist li {
+    text-align: left;
+    border-bottom: 1px solid red;
+    padding: 10px 0px;
+    cursor: pointer;
+    min-width: 250px;
+}
+
+li.completed {
+    text-decoration: line-through;
+}
+
+ul#todolist li span.completed:after {
+    content: '\01F5F9';
+    color: green;
+    font-size: 28px;
+    padding: 4px;
+
+}
+
+
+
+ul#todolist li span.uncompleted:after {
+    content: '\02610';
+    color: green;
+    font-size: 28px;
+    padding: 4px;
+    
+}
+
+ul#todolist li:hover span.cross:after {
+    content: '\02A2F';
+    color: red;
+    font-size: 28px;
+    padding: 4px;
+    float: right;
+    margin-right: 5px;
+}
